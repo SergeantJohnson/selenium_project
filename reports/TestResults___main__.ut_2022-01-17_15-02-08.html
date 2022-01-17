@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-01-17 15:02:08</p>
+                <p class='attribute'><strong>Duration: </strong>4.64 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 1, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.ut</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_a_gotopage</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_b_fillpage</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="UserFirstName"]"}
+  (Session info: chrome=97.0.4692.71)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x006EFDC3+2555331]
+	Ordinal0 [0x006877F1+2127857]
+	Ordinal0 [0x00582E08+1060360]
+	Ordinal0 [0x005AE49E+1238174]
+	Ordinal0 [0x005AE69B+1238683]
+	Ordinal0 [0x005D9252+1413714]
+	Ordinal0 [0x005C7B54+1342292]
+	Ordinal0 [0x005D75FA+1406458]
+	Ordinal0 [0x005C7976+1341814]
+	Ordinal0 [0x005A36B6+1193654]
+	Ordinal0 [0x005A4546+1197382]
+	GetHandleVerifier [0x00889622+1619522]
+	GetHandleVerifier [0x0093882C+2336844]
+	GetHandleVerifier [0x007823E1+541697]
+	GetHandleVerifier [0x00781443+537699]
+	Ordinal0 [0x0068D18E+2150798]
+	Ordinal0 [0x00691518+2168088]
+	Ordinal0 [0x00691660+2168416]
+	Ordinal0 [0x0069B330+2208560]
+	BaseThreadInitThunk [0x76E5FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C87A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77C87A6E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\charu\workspace_python\selenium_project\basicweb\ut_sf.py", line 33, in test_b_fillpage
+    self.driver.find_element(By.NAME, "UserFirstName").send_keys("ABCD")
+  File "C:\Users\charu\python3x\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1244, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\charu\python3x\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\charu\python3x\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="UserFirstName"]"}
+  (Session info: chrome=97.0.4692.71)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x006EFDC3+2555331]
+	Ordinal0 [0x006877F1+2127857]
+	Ordinal0 [0x00582E08+1060360]
+	Ordinal0 [0x005AE49E+1238174]
+	Ordinal0 [0x005AE69B+1238683]
+	Ordinal0 [0x005D9252+1413714]
+	Ordinal0 [0x005C7B54+1342292]
+	Ordinal0 [0x005D75FA+1406458]
+	Ordinal0 [0x005C7976+1341814]
+	Ordinal0 [0x005A36B6+1193654]
+	Ordinal0 [0x005A4546+1197382]
+	GetHandleVerifier [0x00889622+1619522]
+	GetHandleVerifier [0x0093882C+2336844]
+	GetHandleVerifier [0x007823E1+541697]
+	GetHandleVerifier [0x00781443+537699]
+	Ordinal0 [0x0068D18E+2150798]
+	Ordinal0 [0x00691518+2168088]
+	Ordinal0 [0x00691660+2168416]
+	Ordinal0 [0x0069B330+2208560]
+	BaseThreadInitThunk [0x76E5FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C87A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77C87A6E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 1, Error: 1 -- Duration: 4.64 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
